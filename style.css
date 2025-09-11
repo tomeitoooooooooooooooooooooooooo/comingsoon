@@ -3,7 +3,6 @@ body {
                "Hiragino Mincho ProN", "MS 明朝", serif;
 }
 
-
 /* ハムスターとローディングを縦並びにする */
 .loading-box {
   display: flex;
