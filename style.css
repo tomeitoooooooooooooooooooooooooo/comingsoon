@@ -416,232 +416,6 @@ body {
   color: #555;
 }
 
-/* title */
-.title {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  align-items: flex-start;
-  text-align: left;
-
-  margin-left: 0;       /* 左に寄せる */
-  align-self: flex-start; /* 親がflex中央寄せの場合はこちらも追加 */
-}
-
-h1 {
-  border-bottom: solid 3px skyblue;
-  position: relative;
-}
-
-h1:after {
-  position: absolute;
-  content: " ";
-  display: block;
-  border-bottom: solid 3px #ffc778;
-  bottom: -3px;
-  width: 30%;
-}
-
-/* note */
-.notifications-container {
-  width: auto;
-  height: auto;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
-
-.success {
-  padding: 1rem;
-  border-radius: 0.375rem;
-  background-color: rgb(240 253 244);
-}
-
-.succes-svg {
-  color: rgb(74 222 128);
-  width: 1.25rem;
-  height: 3rem;
-}
-
-.success-prompt-wrap {
-  margin-left: 0.75rem;
-}
-
-.success-prompt-heading {
-  font-weight: bold;
-  color: rgb(22 101 52);
-}
-
-.success-prompt-prompt {
-  margin-top: 0.5rem;
-  color: rgb(21 128 61);
-}
-
-/* title2 */
-.title2 {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  align-items: flex-start;
-  text-align: left;
-
-  margin-left: 0;       /* 左に寄せる */
-  align-self: flex-start; /* 親がflex中央寄せの場合はこちらも追加 */
-}
-
-h1 {
-  border-bottom: solid 3px skyblue;
-  position: relative;
-}
-
-h1:after {
-  position: absolute;
-  content: " ";
-  display: block;
-  border-bottom: solid 3px #ffc778;
-  bottom: -3px;
-  width: 30%;
-}
-
-/* ボタン */
-.cta {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.cta span {
-  padding-bottom: 7px;
-  letter-spacing: 4px;
-  font-size: 14px;
-  padding-right: 15px;
-  text-transform: uppercase;
-}
-
-.cta svg {
-  transform: translateX(-8px);
-  transition: all 0.3s ease;
-}
-
-.cta:hover svg {
-  transform: translateX(0);
-}
-
-.cta:active svg {
-  transform: scale(0.9);
-}
-
-.hover-underline-animation {
-  position: relative;
-  color: black;
-  padding-bottom: 20px;
-}
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.cta:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
-/* 余白 */
-body {
-  padding-bottom: 10rem; /* ページ下端に余白を追加 */
-}
-
-/* フッダー */
-html {
-  font-family: sans-serif;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: #999;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #000;
-}
-
-.flex {
-  display: flex;
-}
-
-hr {
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #e5e7eb;
-}
-
-.footer {
-  padding: 2rem;
-  font-size: 15px;
-  color: #999;
-  background: #fff;
-}
-
-.footer__navi {
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.footer__navi li {
-  display: inline-block;
-}
-
-.footer__navi li:not(:last-child) {
-  margin-right: 16px;
-}
-
-.footer__logo {
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-  .md-flex {
-    display: flex;
-  }
-
-  .md-justify-between {
-    justify-content: space-between;
-  }
-
-  .copyright {
-    text-align: left;
-  }
-}
-
 /* 予約ボタン */
 .type--C {
   --line_color: #000000;
@@ -887,4 +661,230 @@ hr {
 }
 .button:not(:last-child) {
   margin-bottom: 64px;
+}
+
+/* title */
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  align-items: flex-start;
+  text-align: left;
+
+  margin-left: 0;       /* 左に寄せる */
+  align-self: flex-start; /* 親がflex中央寄せの場合はこちらも追加 */
+}
+
+h1 {
+  border-bottom: solid 3px skyblue;
+  position: relative;
+}
+
+h1:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #ffc778;
+  bottom: -3px;
+  width: 30%;
+}
+
+/* note */
+.notifications-container {
+  width: auto;
+  height: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.success {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: rgb(240 253 244);
+}
+
+.succes-svg {
+  color: rgb(74 222 128);
+  width: 1.25rem;
+  height: 3rem;
+}
+
+.success-prompt-wrap {
+  margin-left: 0.75rem;
+}
+
+.success-prompt-heading {
+  font-weight: bold;
+  color: rgb(22 101 52);
+}
+
+.success-prompt-prompt {
+  margin-top: 0.5rem;
+  color: rgb(21 128 61);
+}
+
+/* title2 */
+.title2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  align-items: flex-start;
+  text-align: left;
+
+  margin-left: 0;       /* 左に寄せる */
+  align-self: flex-start; /* 親がflex中央寄せの場合はこちらも追加 */
+}
+
+h1 {
+  border-bottom: solid 3px skyblue;
+  position: relative;
+}
+
+h1:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #ffc778;
+  bottom: -3px;
+  width: 30%;
+}
+
+/* ボタン */
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* 余白 */
+body {
+  padding-bottom: 10rem; /* ページ下端に余白を追加 */
+}
+
+/* フッダー */
+html {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+.flex {
+  display: flex;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer {
+  padding: 2rem;
+  font-size: 15px;
+  color: #999;
+  background: #fff;
+}
+
+.footer__navi {
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer__navi li {
+  display: inline-block;
+}
+
+.footer__navi li:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
+
+  .copyright {
+    text-align: left;
+  }
 }
